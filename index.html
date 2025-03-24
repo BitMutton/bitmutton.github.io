@@ -3,110 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innovative Software Solutions</title>
+    <title>Leading Software Development Company</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
-        body { font-family: Arial, sans-serif; }
+        body {
+            font-family: Arial, sans-serif;
+        }
         .hero {
             background: url('images/hero-bg.jpg') center/cover no-repeat;
             min-height: 100vh;
+            color: white;
             display: flex;
             align-items: center;
             text-align: center;
+            padding: 50px 15px;
+        }
+        .dark-overlay {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 10px;
+        }
+        .navbar-dark .navbar-nav .nav-link {
             color: white;
         }
-        .service-card { transition: 0.3s; }
-        .service-card:hover { transform: scale(1.05); }
-        .footer-links a { color: white; margin: 0 10px; }
+        .section {
+            padding: 60px 0;
+        }
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero d-flex justify-content-center">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <h1 class="display-3 fw-bold">Empowering Your Digital Future</h1>
-            <p class="lead">Cutting-edge software solutions tailored for your success.</p>
-            <a href="get-quote.html" class="btn btn-primary btn-lg">Get a Free Consultation</a>
+            <a class="navbar-brand" href="#">Software Solutions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quote">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </section>
+    </nav>
 
-    <!-- About Section -->
-    <section class="py-5">
-        <div class="container text-center">
-            <h2>About Us</h2>
-            <p>We are a passionate team of developers, designers, and strategists committed to delivering exceptional software solutions for businesses worldwide.</p>
-            <a href="about.html" class="btn btn-outline-primary">Learn More</a>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="py-5 bg-light">
-        <div class="container text-center">
-            <h2>Our Expertise</h2>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card service-card p-3">
-                        <h4>Web Development</h4>
-                        <p>Custom, scalable, and high-performance websites.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card service-card p-3">
-                        <h4>Mobile App Development</h4>
-                        <p>Seamless experiences on Android and iOS.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card service-card p-3">
-                        <h4>Cloud Solutions</h4>
-                        <p>Secure, scalable, and cost-effective cloud applications.</p>
-                    </div>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="dark-overlay">
+                <h1 class="display-4">Innovative Software Solutions</h1>
+                <p class="lead">Building scalable, secure, and high-performing digital solutions.</p>
+                <a href="#quote" class="btn btn-primary btn-lg">Get a Free Quote</a>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section class="py-5">
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
         <div class="container text-center">
-            <h2>Our Work</h2>
-            <p>See how we've helped businesses achieve their goals.</p>
-            <a href="portfolio.html" class="btn btn-secondary">View Portfolio</a>
+            <h2>About Us</h2>
+            <p>We are a cutting-edge software development agency specializing in web and mobile solutions.</p>
         </div>
     </section>
 
-    <!-- Contact & Quote Form -->
-    <section class="bg-dark text-white py-5">
+    <!-- Services Section -->
+    <section id="services" class="section">
         <div class="container text-center">
-            <h2>Request a Consultation</h2>
-            <p>Tell us about your project, and we’ll reach out to discuss how we can help.</p>
-            <form class="row g-2 justify-content-center">
-                <div class="col-md-4">
-                    <input type="text" class="form-control" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-4">
-                    <input type="email" class="form-control" placeholder="Your Email" required>
-                </div>
-                <div class="col-md-8 mt-2">
-                    <textarea class="form-control" placeholder="Project Details" rows="3" required></textarea>
-                </div>
-                <div class="col-md-8 mt-3">
-                    <button type="submit" class="btn btn-warning btn-lg">Submit</button>
-                </div>
+            <h2>Our Services</h2>
+            <p>We offer custom software solutions, UI/UX design, mobile app development, and more.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section bg-light">
+        <div class="container text-center">
+            <h2>Our Portfolio</h2>
+            <p>Check out our past projects and success stories.</p>
+            <a href="portfolio.html" class="btn btn-secondary">View Projects</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="quote" class="section text-white bg-dark">
+        <div class="container text-center">
+            <h2>Request a Quote</h2>
+            <p>Tell us about your project, and we'll provide the best solution.</p>
+            <form>
+                <input type="text" class="form-control mb-2" placeholder="Your Name">
+                <input type="email" class="form-control mb-2" placeholder="Your Email">
+                <textarea class="form-control mb-2" placeholder="Project Details"></textarea>
+                <button type="submit" class="btn btn-warning">Submit</button>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-4 bg-dark text-white text-center">
+    <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Software Solutions. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Contact</a>
-            </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
