@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative Software Solutions</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .hero {
+            background: url('images/hero-bg.jpg') center/cover no-repeat;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .service-card { transition: 0.3s; }
+        .service-card:hover { transform: scale(1.05); }
+        .footer-links a { color: white; margin: 0 10px; }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero d-flex justify-content-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Empowering Your Digital Future</h1>
+            <p class="lead">Cutting-edge software solutions tailored for your success.</p>
+            <a href="get-quote.html" class="btn btn-primary btn-lg">Get a Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <p>We are a passionate team of developers, designers, and strategists committed to delivering exceptional software solutions for businesses worldwide.</p>
+            <a href="about.html" class="btn btn-outline-primary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Our Expertise</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card service-card p-3">
+                        <h4>Web Development</h4>
+                        <p>Custom, scalable, and high-performance websites.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card p-3">
+                        <h4>Mobile App Development</h4>
+                        <p>Seamless experiences on Android and iOS.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card p-3">
+                        <h4>Cloud Solutions</h4>
+                        <p>Secure, scalable, and cost-effective cloud applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2>Our Work</h2>
+            <p>See how we've helped businesses achieve their goals.</p>
+            <a href="portfolio.html" class="btn btn-secondary">View Portfolio</a>
+        </div>
+    </section>
+
+    <!-- Contact & Quote Form -->
+    <section class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2>Request a Consultation</h2>
+            <p>Tell us about your project, and we’ll reach out to discuss how we can help.</p>
+            <form class="row g-2 justify-content-center">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-4">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="col-md-8 mt-2">
+                    <textarea class="form-control" placeholder="Project Details" rows="3" required></textarea>
+                </div>
+                <div class="col-md-8 mt-3">
+                    <button type="submit" class="btn btn-warning btn-lg">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p>&copy; 2025 Software Solutions. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
